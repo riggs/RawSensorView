@@ -1,0 +1,17 @@
+{
+  "name": "RawSensorDisplay",
+  "description": "Display Raw Data from USB HID Sensors",
+  "version": "0.0.0",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "permissions": [
+    "hid",
+    {"usbDevices": [{"vendorId": 1003, "productId": 8256}]}
+  ]
+}
